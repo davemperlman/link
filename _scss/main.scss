@@ -1,0 +1,203 @@
+@import 'grid';
+
+body {
+		background-color: #92663b;
+		background-color: #3c4466;
+		color: #fff;
+}
+section {
+	min-height: 350px;
+	//margin: 2rem 0;
+}
+.row {
+
+}
+.row:not(:first-child) {
+	background-color: rgba(0,0,0,.4);
+	padding: 4rem 0;
+}
+// Header //
+	header {
+		background-color: #3c4466;
+		color: #fff;
+		height: 50px;
+		//margin-bottom: 2rem;
+		overflow: hidden;
+		box-shadow: 1px 1px 3px #000;
+		.brand {
+			height: 100%;
+			overflow: hidden;
+			img {
+				height: 90px;
+				margin-top: -2.25rem;
+			}
+		}
+	}
+	.menu {
+		float: right;
+		padding: 0;
+		li {
+			float: left;
+			width: 100px;
+			height: 50px;
+			line-height: 50px;
+			margin: 0 .5rem;
+			text-align: center;
+			transition: .5s all;
+			display: block;
+			
+			&:hover {
+				background-color: rgba(255,255,255,.2);
+				a::after {
+					width: 50%;
+				}
+			}
+			a {
+				text-decoration: none;
+				position: relative;
+				font-variant: small-caps;
+				color: #fff;
+				display: block;
+				width: 100%;
+				height: 100%;
+					&::after {
+						transition: all .2s;
+					content: '';
+					margin: auto;
+					display: block;
+					position: absolute;
+					bottom: 1rem;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 1rem;
+					width: 0;
+					border-bottom: .1rem solid #fff;
+				}
+			}
+		}
+	}
+
+// Carousel //
+	.carousel {
+		background: rgba(0,0,0,1)  url('../_img/1.jpg') ;
+		background-size: cover;
+		position: relative;
+	}
+	.slide {
+		display: none;
+		margin: 5rem 0;
+		&:first-child {
+			display: block;
+		}
+		.carousel-title {
+			font-size: 1.8rem;
+			margin: 1rem auto;
+			width: 100%;
+			text-align: center;
+			font-family: cursive;
+			color: #fff;
+		}
+		.carousel-body {
+			color: #fff;
+		}
+		button {
+			border-radius: 0;
+			border: .1rem solid #fff;
+			background-color: transparent;
+			color: #fff;
+			width: 8rem;
+			height: 2.5rem;
+			font-size: 1.2rem;
+			margin: 1rem auto;
+			display: block;
+			transition: all .5s;
+			cursor: pointer;
+			&:hover {
+				background-color: rgba(255,255,255,.5);
+			}
+		}
+		&.active {
+			display: block;
+		}
+	}
+
+// About //
+	.about {
+
+	}
+	.profile {
+		border: .2rem solid #fff;
+		display: block;
+		margin: 0 auto 1rem;
+	}	
+// Services //
+	.services {
+		background: url('../_img/2.jpg');
+		background-size: cover;
+		& .col-3-medium {
+			background-color: rgba(100,100,100,.4);
+			h3 {
+				background-color: #fff;
+
+			}
+		}
+	}
+
+// Contact //
+
+.contact {
+	padding: 1rem 0;
+	h3 {
+		font-size: 1.5rem;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+	background-color: rgba(100,100,100,.4);
+	max-width: 1024px;
+	margin: 0 auto;
+	label {
+		position: relative;
+		text-align: center;
+		display: inline-block;
+		line-height: 2rem;
+		&::after {
+			//content: attr(data-thing);
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			margin: auto;
+			text-align: center;
+		}
+	}
+}
+input, textarea {
+	border: none;
+	background-color: rgba(255,255,255,.3);
+	border-radius: 8px;
+	position: relative;
+	color: #fff;
+	outline: none;
+}
+input {
+	height: 2rem;
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	text-align:  center;
+}
+
+textarea {
+	width: 90%;
+	height: 10rem;
+	margin: 0 auto;
+	display: block;
+	resize: none;
+}
+// Footer //
+	footer {
+		background-color: #222;
+		color: #fff;
+	}

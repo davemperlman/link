@@ -1,0 +1,320 @@
+[class*='col-1'] {
+  width: 8.3333333333%;
+  float: left;
+  padding: 1rem;
+  min-width: 1px;
+  box-sizing: border-box; }
+
+[class*='offset-1'] {
+  margin-left: 8.3333333333%; }
+
+[class*='col-2'] {
+  width: 16.6666666667%;
+  float: left;
+  padding: 1rem;
+  min-width: 1px;
+  box-sizing: border-box; }
+
+[class*='offset-2'] {
+  margin-left: 16.6666666667%; }
+
+[class*='col-3'] {
+  width: 25%;
+  float: left;
+  padding: 1rem;
+  min-width: 1px;
+  box-sizing: border-box; }
+
+[class*='offset-3'] {
+  margin-left: 25%; }
+
+[class*='col-4'] {
+  width: 33.3333333333%;
+  float: left;
+  padding: 1rem;
+  min-width: 1px;
+  box-sizing: border-box; }
+
+[class*='offset-4'] {
+  margin-left: 33.3333333333%; }
+
+[class*='col-5'] {
+  width: 41.6666666667%;
+  float: left;
+  padding: 1rem;
+  min-width: 1px;
+  box-sizing: border-box; }
+
+[class*='offset-5'] {
+  margin-left: 41.6666666667%; }
+
+[class*='col-6'] {
+  width: 50%;
+  float: left;
+  padding: 1rem;
+  min-width: 1px;
+  box-sizing: border-box; }
+
+[class*='offset-6'] {
+  margin-left: 50%; }
+
+[class*='col-7'] {
+  width: 58.3333333333%;
+  float: left;
+  padding: 1rem;
+  min-width: 1px;
+  box-sizing: border-box; }
+
+[class*='offset-7'] {
+  margin-left: 58.3333333333%; }
+
+[class*='col-8'] {
+  width: 66.6666666667%;
+  float: left;
+  padding: 1rem;
+  min-width: 1px;
+  box-sizing: border-box; }
+
+[class*='offset-8'] {
+  margin-left: 66.6666666667%; }
+
+[class*='col-9'] {
+  width: 75%;
+  float: left;
+  padding: 1rem;
+  min-width: 1px;
+  box-sizing: border-box; }
+
+[class*='offset-9'] {
+  margin-left: 75%; }
+
+[class*='col-10'] {
+  width: 83.3333333333%;
+  float: left;
+  padding: 1rem;
+  min-width: 1px;
+  box-sizing: border-box; }
+
+[class*='offset-10'] {
+  margin-left: 83.3333333333%; }
+
+[class*='col-11'] {
+  width: 91.6666666667%;
+  float: left;
+  padding: 1rem;
+  min-width: 1px;
+  box-sizing: border-box; }
+
+[class*='offset-11'] {
+  margin-left: 91.6666666667%; }
+
+[class*='col-12'] {
+  width: 100%;
+  float: left;
+  padding: 1rem;
+  min-width: 1px;
+  box-sizing: border-box; }
+
+[class*='offset-12'] {
+  margin-left: 100%; }
+
+@media screen and (max-width: 1000px) {
+  [class*='xlarge'] {
+    float: none;
+    width: 100%;
+    margin: 0; } }
+
+@media screen and (max-width: 900px) {
+  [class*='large'] {
+    float: none;
+    width: 100%;
+    margin: 0; } }
+
+@media screen and (max-width: 767px) {
+  [class*='medium'] {
+    float: none;
+    width: 100%;
+    margin: 0; } }
+
+@media screen and (max-width: 500px) {
+  [class*='small'] {
+    float: none;
+    width: 100%;
+    margin: 0; } }
+
+@media screen and (max-width: 400px) {
+  [class*='xsmall'] {
+    float: none;
+    width: 100%;
+    margin: 0; } }
+
+.container {
+  width: 100%;
+  margin: 0 auto; }
+  .container::after, .container .row::after {
+    content: '';
+    display: table;
+    clear: both; }
+
+body {
+  background-color: #92663b;
+  background-color: #3c4466;
+  color: #fff; }
+
+section {
+  min-height: 350px; }
+
+.row:not(:first-child) {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 4rem 0; }
+
+header {
+  background-color: #3c4466;
+  color: #fff;
+  height: 50px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px #000; }
+  header .brand {
+    height: 100%;
+    overflow: hidden; }
+    header .brand img {
+      height: 90px;
+      margin-top: -2.25rem; }
+
+.menu {
+  float: right;
+  padding: 0; }
+  .menu li {
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 .5rem;
+    text-align: center;
+    transition: .5s all;
+    display: block; }
+    .menu li:hover {
+      background-color: rgba(255, 255, 255, 0.2); }
+      .menu li:hover a::after {
+        width: 50%; }
+    .menu li a {
+      text-decoration: none;
+      position: relative;
+      font-variant: small-caps;
+      color: #fff;
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .menu li a::after {
+        transition: all .2s;
+        content: '';
+        margin: auto;
+        display: block;
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 1rem;
+        width: 0;
+        border-bottom: .1rem solid #fff; }
+
+.carousel {
+  background: black url("../_img/1.jpg");
+  background-size: cover;
+  position: relative; }
+
+.slide {
+  display: none;
+  margin: 5rem 0; }
+  .slide:first-child {
+    display: block; }
+  .slide .carousel-title {
+    font-size: 1.8rem;
+    margin: 1rem auto;
+    width: 100%;
+    text-align: center;
+    font-family: cursive;
+    color: #fff; }
+  .slide .carousel-body {
+    color: #fff; }
+  .slide button {
+    border-radius: 0;
+    border: .1rem solid #fff;
+    background-color: transparent;
+    color: #fff;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    display: block;
+    transition: all .5s;
+    cursor: pointer; }
+    .slide button:hover {
+      background-color: rgba(255, 255, 255, 0.5); }
+  .slide.active {
+    display: block; }
+
+.profile {
+  border: .2rem solid #fff;
+  display: block;
+  margin: 0 auto 1rem; }
+
+.services {
+  background: url("../_img/2.jpg");
+  background-size: cover; }
+  .services .col-3-medium {
+    background-color: rgba(100, 100, 100, 0.4); }
+    .services .col-3-medium h3 {
+      background-color: #fff; }
+
+.contact {
+  padding: 1rem 0;
+  background-color: rgba(100, 100, 100, 0.4);
+  max-width: 1024px;
+  margin: 0 auto; }
+  .contact h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .contact label {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    line-height: 2rem; }
+    .contact label::after {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      text-align: center; }
+
+input, textarea {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  position: relative;
+  color: #fff;
+  outline: none; }
+
+input {
+  height: 2rem;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
+textarea {
+  width: 90%;
+  height: 10rem;
+  margin: 0 auto;
+  display: block;
+  resize: none; }
+
+footer {
+  background-color: #222;
+  color: #fff; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,46 @@
+// Dynamic, Responsive Grid = = = = = = = = = = = = = = = = = = = = = = = ||
+	$columns: 12;														  
+	$columnWidth: percentage(1/$columns);								  
+	$breaks: (															  
+			xlarge: 1000px,												  
+			large:  900px,												  
+			medium: 767px,												  
+			small:  500px,												  
+			xsmall:     400px											  
+		);																  
+																		  
+	@for $i from 1 through $columns {									  
+		[class*='col-#{$i}'] {									          
+			width: $columnWidth * $i;									  
+			float: left;												  
+			padding: 1rem;												  
+			min-width: 1px;												  
+			box-sizing: border-box;										  
+		}
+		[class*='offset-#{$i}'] {
+			margin-left: $columnWidth * $i;
+		}																					  
+	}	
+	@each $size, $break in $breaks {
+		[class*='#{$size}'] {
+			@media screen and (max-width: $break) {
+				float: none;
+				width: 100%;
+				margin: 0;
+			}
+		}
+	}																  
+																		  
+//= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ||
+
+
+.container {
+	width: 100%; // Change to fixed;
+	//max-width: 1228px;
+	margin: 0 auto;
+	&::after, .row::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
