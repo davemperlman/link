@@ -1,22 +1,22 @@
 [class*='col-1'] {
-  width: 8.3333333333%;
+  width: 8.33333%;
   float: left;
   padding: 1rem;
   min-width: 1px;
   box-sizing: border-box; }
 
 [class*='offset-1'] {
-  margin-left: 8.3333333333%; }
+  margin-left: 8.33333%; }
 
 [class*='col-2'] {
-  width: 16.6666666667%;
+  width: 16.66667%;
   float: left;
   padding: 1rem;
   min-width: 1px;
   box-sizing: border-box; }
 
 [class*='offset-2'] {
-  margin-left: 16.6666666667%; }
+  margin-left: 16.66667%; }
 
 [class*='col-3'] {
   width: 25%;
@@ -29,24 +29,24 @@
   margin-left: 25%; }
 
 [class*='col-4'] {
-  width: 33.3333333333%;
+  width: 33.33333%;
   float: left;
   padding: 1rem;
   min-width: 1px;
   box-sizing: border-box; }
 
 [class*='offset-4'] {
-  margin-left: 33.3333333333%; }
+  margin-left: 33.33333%; }
 
 [class*='col-5'] {
-  width: 41.6666666667%;
+  width: 41.66667%;
   float: left;
   padding: 1rem;
   min-width: 1px;
   box-sizing: border-box; }
 
 [class*='offset-5'] {
-  margin-left: 41.6666666667%; }
+  margin-left: 41.66667%; }
 
 [class*='col-6'] {
   width: 50%;
@@ -59,24 +59,24 @@
   margin-left: 50%; }
 
 [class*='col-7'] {
-  width: 58.3333333333%;
+  width: 58.33333%;
   float: left;
   padding: 1rem;
   min-width: 1px;
   box-sizing: border-box; }
 
 [class*='offset-7'] {
-  margin-left: 58.3333333333%; }
+  margin-left: 58.33333%; }
 
 [class*='col-8'] {
-  width: 66.6666666667%;
+  width: 66.66667%;
   float: left;
   padding: 1rem;
   min-width: 1px;
   box-sizing: border-box; }
 
 [class*='offset-8'] {
-  margin-left: 66.6666666667%; }
+  margin-left: 66.66667%; }
 
 [class*='col-9'] {
   width: 75%;
@@ -89,24 +89,24 @@
   margin-left: 75%; }
 
 [class*='col-10'] {
-  width: 83.3333333333%;
+  width: 83.33333%;
   float: left;
   padding: 1rem;
   min-width: 1px;
   box-sizing: border-box; }
 
 [class*='offset-10'] {
-  margin-left: 83.3333333333%; }
+  margin-left: 83.33333%; }
 
 [class*='col-11'] {
-  width: 91.6666666667%;
+  width: 91.66667%;
   float: left;
   padding: 1rem;
   min-width: 1px;
   box-sizing: border-box; }
 
 [class*='offset-11'] {
-  margin-left: 91.6666666667%; }
+  margin-left: 91.66667%; }
 
 [class*='col-12'] {
   width: 100%;
@@ -164,9 +164,16 @@ body {
 section {
   min-height: 350px; }
 
+.row {
+  height: auto; }
+
 .row:not(:first-child) {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 4rem 0; }
+
+.row:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0; }
 
 header {
   background-color: #3c4466;
@@ -222,7 +229,9 @@ header {
 .carousel {
   background: black url("../_img/1.jpg");
   background-size: cover;
-  position: relative; }
+  position: relative;
+  height: 30vw;
+  min-height: 350px; }
 
 .slide {
   display: none;
@@ -255,21 +264,45 @@ header {
   .slide.active {
     display: block; }
 
+.about {
+  position: relative;
+  background-color: rgba(23, 43, 111, 0.5);
+  overflow: hidden; }
+  .about::before, .about::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    background-size: contain;
+    position: absolute; }
+  .about::before {
+    left: 1rem; }
+  .about::after {
+    right: 1rem; }
+
 .profile {
   border: .2rem solid #fff;
   display: block;
   margin: 0 auto 1rem; }
 
-.services {
-  background: url("../_img/2.jpg");
-  background-size: cover; }
-  .services .col-3-medium {
-    background-color: rgba(100, 100, 100, 0.4); }
-    .services .col-3-medium h3 {
-      background-color: #fff; }
+.services .col-3-medium h3 {
+  background-color: #3c4466;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2rem; }
+.services .col-3-medium .description {
+  padding: .5rem;
+  border: .01rem solid #3c4466;
+  background-color: rgba(100, 100, 100, 0.8); }
 
 .contact {
   padding: 1rem 0;
+  margin-bottom: 0;
   background-color: rgba(100, 100, 100, 0.4);
   max-width: 1024px;
   margin: 0 auto; }
@@ -291,6 +324,9 @@ header {
       margin: auto;
       text-align: center; }
 
+fieldset {
+  width: 100%; }
+
 input, textarea {
   border: none;
   background-color: rgba(255, 255, 255, 0.3);
@@ -301,13 +337,13 @@ input, textarea {
 
 input {
   height: 2rem;
-  width: 80%;
+  width: 100%;
   display: block;
   margin: 0 auto;
   text-align: center; }
 
 textarea {
-  width: 90%;
+  width: 100%;
   height: 10rem;
   margin: 0 auto;
   display: block;
@@ -315,6 +351,7 @@ textarea {
 
 footer {
   background-color: #222;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

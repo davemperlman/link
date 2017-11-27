@@ -32,12 +32,16 @@
 	</div>
 	<div class="row">
 		<section class="about">
-			<div class="col-6-small">
-				<img class="profile" src="_img/slink.jpg" alt="">
-				<h2>About Stephen Link</h2>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum incidunt delectus deleniti nesciunt aspernatur, doloribus similique consectetur sequi repellat atque perferendis eaque aut, quidem magnam nam expedita illum. Unde, officia!
+			<div class="row">
+				<div class="col-12-small">
+					<img class="profile" src="_img/slink.jpg" alt="">
+				</div>
 			</div>
-			<div class="col-6-small">
+			<div class="col-4-small col-small-offset-2">
+				<h2>About Stephen Link</h2>
+				Stephen Link is a lawyer who enjoys planning estates, doesn't enjoy divorce, and does enjoy eating chili cheese fries. He's from Missouri but doesn't have an accent, claims to be a liberal but likes guns, and he was chosen to be the BNI education coordinator because it sounds good on paper to say, "Here's Stephen Link's Link to BNI this week!"
+			</div>
+			<div class="col-4-small">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum incidunt delectus deleniti nesciunt aspernatur, doloribus similique consectetur sequi repellat atque perferendis eaque aut, quidem magnam nam expedita illum. Unde, officia!
 			</div>
 		</section>
@@ -46,19 +50,27 @@
 		<section class="services">
 			<div class="col-3-medium">
 				<h3>Estate Planning</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et veniam rem obcaecati, sunt ratione ad distinctio sint modi cumque illum, error laborum ex iusto. Incidunt eligendi quaerat, fuga velit possimus.</p>
+				<div class="description">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et veniam rem obcaecati, sunt ratione ad distinctio sint modi cumque illum, error laborum ex iusto. Incidunt eligendi quaerat, fuga velit possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas omnis nostrum alias odit architecto necessitatibus eligendi, repellat doloremque accusamus, perspiciatis qui, possimus. Vitae, mollitia magni nulla fugiat voluptatibus, quae quod.</p>
+				</div>
 			</div>
 			<div class="col-3-medium">
 				<h3>Divorce</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et veniam rem obcaecati, sunt ratione ad distinctio sint modi cumque illum, error laborum ex iusto. Incidunt eligendi quaerat, fuga velit possimus.</p>
+				<div class="description">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et veniam rem obcaecati, sunt ratione ad distinctio sint modi cumque illum, error laborum ex iusto. Incidunt eligendi quaerat, fuga velit possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas omnis nostrum alias odit architecto necessitatibus eligendi, repellat doloremque accusamus, perspiciatis qui, possimus. Vitae, mollitia magni nulla fugiat voluptatibus, quae quod.</p>
+				</div>
 			</div>
 			<div class="col-3-medium">
 				<h3>OUI</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et veniam rem obcaecati, sunt ratione ad distinctio sint modi cumque illum, error laborum ex iusto. Incidunt eligendi quaerat, fuga velit possimus.</p>
+				<div class="description">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et veniam rem obcaecati, sunt ratione ad distinctio sint modi cumque illum, error laborum ex iusto. Incidunt eligendi quaerat, fuga velit possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas omnis nostrum alias odit architecto necessitatibus eligendi, repellat doloremque accusamus, perspiciatis qui, possimus. Vitae, mollitia magni nulla fugiat voluptatibus, quae quod.</p>
+				</div>
 			</div>
 			<div class="col-3-medium">
 				<h3>Much More</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et veniam rem obcaecati, sunt ratione ad distinctio sint modi cumque illum, error laborum ex iusto. Incidunt eligendi quaerat, fuga velit possimus.</p>
+				<div class="description">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et veniam rem obcaecati, sunt ratione ad distinctio sint modi cumque illum, error laborum ex iusto. Incidunt eligendi quaerat, fuga velit possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas omnis nostrum alias odit architecto necessitatibus eligendi, repellat doloremque accusamus, perspiciatis qui, possimus. Vitae, mollitia magni nulla fugiat voluptatibus, quae quod.</p>
+				</div>
 			</div>
 		</section>
 	</div>
@@ -66,7 +78,7 @@
 		<section class="contact">
 			<h3>Contact Us</h3>
 			<form class="container">
-				<fieldset class="">
+				<fieldset>
 					<label class="col-3-small" data-thing='First Name'>
 						First Name
 						<input type="text" placeholder="First Name">

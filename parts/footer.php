@@ -1,4 +1,4 @@
-			<footer class="col-6-small col-small-offset-3">
+			<footer class="col-12-small">
 				<div class="container">
 					<div class="row">
 						Stephen J Link: Attorney at Law

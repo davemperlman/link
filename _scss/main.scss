@@ -10,11 +10,15 @@ section {
 	//margin: 2rem 0;
 }
 .row {
-
+	height: auto;
 }
 .row:not(:first-child) {
 	background-color: rgba(0,0,0,.4);
 	padding: 4rem 0;
+}
+.row:last-child {
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 // Header //
 	header {
@@ -83,6 +87,8 @@ section {
 		background: rgba(0,0,0,1)  url('../_img/1.jpg') ;
 		background-size: cover;
 		position: relative;
+		height: 30vw;
+		min-height: 350px;
 	}
 	.slide {
 		display: none;
@@ -124,7 +130,25 @@ section {
 
 // About //
 	.about {
-
+		position: relative;
+		background-color: rgba(23,43,111, .5);
+		overflow: hidden;
+		&::before, &::after {
+			content: '';
+			display: block;
+			width: 100px;
+			height: 100px;
+			bottom: 0;
+			//background: url('../_img/justice.png') no-repeat;
+			background-size: contain;
+			position: absolute;
+		}
+		&::before {
+			left: 1rem;
+		}
+		&::after {
+			right: 1rem;
+		}
 	}
 	.profile {
 		border: .2rem solid #fff;
@@ -133,13 +157,24 @@ section {
 	}	
 // Services //
 	.services {
-		background: url('../_img/2.jpg');
-		background-size: cover;
+		// background-color: rgba(0,0,0,.8);
 		& .col-3-medium {
-			background-color: rgba(100,100,100,.4);
+			// background-color: rgba(100,100,100,.8);
+			// border: .01rem solid #fff;
 			h3 {
-				background-color: #fff;
-
+				background-color: #3c4466;
+				border-top-right-radius: 5px;
+				border-top-left-radius: 5px;
+				height: 2rem;
+				font-size: 1.3rem;
+				font-weight: bold;
+				text-align: center;
+				line-height: 2rem;
+			}
+			.description {
+				padding: .5rem;
+				border: .01rem solid #3c4466;
+				background-color: rgba(100,100,100,.8);
 			}
 		}
 	}
@@ -148,10 +183,12 @@ section {
 
 .contact {
 	padding: 1rem 0;
+	margin-bottom: 0;
 	h3 {
 		font-size: 1.5rem;
 		text-align: center;
 		margin-bottom: 1rem;
+
 	}
 	background-color: rgba(100,100,100,.4);
 	max-width: 1024px;
@@ -173,6 +210,9 @@ section {
 		}
 	}
 }
+fieldset {
+	width: 100%;
+}
 input, textarea {
 	border: none;
 	background-color: rgba(255,255,255,.3);
@@ -183,14 +223,14 @@ input, textarea {
 }
 input {
 	height: 2rem;
-	width: 80%;
+	width: 100%;
 	display: block;
 	margin: 0 auto;
 	text-align:  center;
 }
 
 textarea {
-	width: 90%;
+	width: 100%;
 	height: 10rem;
 	margin: 0 auto;
 	display: block;
@@ -200,4 +240,5 @@ textarea {
 	footer {
 		background-color: #222;
 		color: #fff;
+		text-align: center;
 	}
